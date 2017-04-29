@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="PLYO" version="0.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>PLYO</name>
+    <description>
+        Vigor is a competetive driven fitness app with social features that will change the way you workout, and eat forever.
+    </description>
+    <author email="admin@plyo.fit" href="http://plyo.fit">
+        PLYO Team of Awsomeness
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+ <preference name="Fullscreen" value="true" />
+<preference name="Orientation" value="landscape" />
+<preference name="phonegap-version" value="3.7.0" />   
+</widget>

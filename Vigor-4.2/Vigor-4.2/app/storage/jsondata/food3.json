@@ -1,0 +1,137 @@
+[
+    {
+        "name": "ACORN STEW (APACHE)",
+        "foodtype": "American Indian/Alaska Native Foods",
+        "calories": "95",
+        "fat": "3.47",
+        "carbs": "9.22",
+        "protein": "6.81",
+        "serving_size": "100 grams"
+    },
+    {
+        "name": "AGAVE,CKD (SOUTHWEST)",
+        "foodtype": "American Indian/Alaska Native Foods",
+        "calories": "135",
+        "fat": "0.29",
+        "carbs": "32",
+        "protein": "0.99",
+        "serving_size": "100 grams"
+    },
+    {
+        "name": "AGAVE,DRIED (SOUTHWEST)",
+        "foodtype": "American Indian/Alaska Native Foods",
+        "calories": "341",
+        "fat": "0.69",
+        "carbs": "81.98",
+        "protein": "1.71",
+        "serving_size": "100 grams"
+    },
+    {
+        "name": "AGAVE,RAW (SOUTHWEST)",
+        "foodtype": "American Indian/Alaska Native Foods",
+        "calories": "68",
+        "fat": "0.15",
+        "carbs": "16.23",
+        "protein": "0.52",
+        "serving_size": "100 grams"
+    },
+    {
+        "name": "AGUTUK,FISH W/ SHORTENING (ALASKAN ICE CREAM) (ALASKA NATIVE",
+        "foodtype": "American Indian/Alaska Native Foods",
+        "calories": "470",
+        "fat": "43.5",
+        "carbs": "10.5",
+        "protein": "9",
+        "serving_size": "100 grams"
+    },
+    {
+        "name": "AGUTUK,FISH/BERRY W/ SEAL OIL (ICE CREAM) (ALASKA NATIVE)",
+        "foodtype": "American Indian/Alaska Native Foods",
+        "calories": "353",
+        "fat": "31.8",
+        "carbs": "13.4",
+        "protein": "3.4",
+        "serving_size": "100 grams"
+    },
+    {
+        "name": "AGUTUK,MEAT-CARIBOU (ALASKAN ICE CREAM) (ALASKA NATIVE)",
+        "foodtype": "American Indian/Alaska Native Foods",
+        "calories": "258",
+        "fat": "18.6",
+        "carbs": "0.9",
+        "protein": "21.7",
+        "serving_size": "100 grams"
+    },
+    {
+        "name": "ASCIDIANS (TUNUGHNAK) (ALASKA NATIVE)",
+        "foodtype": "American Indian/Alaska Native Foods",
+        "calories": "20",
+        "fat": "0.5",
+        "carbs": "0",
+        "protein": "3.8",
+        "serving_size": "100 grams"
+    },
+    {
+        "name": "BEAR,BLACK,MEAT (ALASKA NATIVE)",
+        "foodtype": "American Indian/Alaska Native Foods",
+        "calories": "155",
+        "fat": "8.3",
+        "carbs": "0",
+        "protein": "20.1",
+        "serving_size": "100 grams"
+    },
+    {
+        "name": "BEAR,POLAR,MEAT,RAW (ALASKA NATIVE)",
+        "foodtype": "American Indian/Alaska Native Foods",
+        "calories": "130",
+        "fat": "3.1",
+        "carbs": "0",
+        "protein": "25.6",
+        "serving_size": "100 grams"
+    },
+    {
+        "name": "BLACKBERRIES,WILD,RAW (ALASKA NATIVE)",
+        "foodtype": "American Indian/Alaska Native Foods",
+        "calories": "52",
+        "fat": "1.07",
+        "carbs": "9.84",
+        "protein": "0.84",
+        "serving_size": "100 grams"
+    },
+    {
+        "name": "BLUEBERRIES,WILD,FRZ (ALASKA NATIVE)",
+        "foodtype": "American Indian/Alaska Native Foods",
+        "calories": "44",
+        "fat": "0",
+        "carbs": "10.4",
+        "protein": "0.7",
+        "serving_size": "100 grams"
+    },
+    {
+        "name": "BLUEBERRIES,WILD,RAW (ALASKA NATIVE)",
+        "foodtype": "American Indian/Alaska Native Foods",
+        "calories": "61",
+        "fat": "0.76",
+        "carbs": "12.31",
+        "protein": "1.22",
+        "serving_size": "100 grams"
+    },
+    {
+        "name": "BREAD,BLUE CORN,SOMIVIKI (HOPI)",
+        "foodtype": "American Indian/Alaska Native Foods",
+        "calories": "186",
+        "fat": "1.53",
+        "carbs": "39.84",
+        "protein": "3.1",
+        "serving_size": "100 grams"
+    },
+    {
+        "name": "YAUTIA (TANNIER),RAW",
+        "foodtype": "Vegetables and Vegetable Products",
+        "calories": "98",
+        "fat": "0.4",
+        "carbs": "23.63",
+        "protein": "1.46",
+        "serving_size": "100 grams"
+    }
+]

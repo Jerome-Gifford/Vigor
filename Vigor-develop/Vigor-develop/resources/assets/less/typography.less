@@ -1,0 +1,457 @@
+/**
+* Establish Custom Font
+*/
+@font-face{
+font-family: 'Raleway-Regular';
+src: url('../font/Raleway-Regular.ttf')
+}
+
+
+/**
+*Sidebar Gradient 
+*/
+.blue-gradient{
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top left, #57A5ED 0%, #30C8CA 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top left, #57A5ED 0%, #30C8CA 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top left, #57A5ED 0%, #30C8CA 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #57A5ED), color-stop(1, #30C8CA));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top left, #57A5ED 0%, #30C8CA 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom right, #57A5ED 0%, #30C8CA 100%);
+}
+
+
+
+/**
+*User Info Gradient
+*/
+.drk-blue-gradient{
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(bottom right, #3D6281 0%, #42656E 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(bottom right, #3D6281 0%, #42656E 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(bottom right, #3D6281 0%, #42656E 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #3D6281), color-stop(1, #42656E));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(bottom right, #3D6281 0%, #42656E 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom right, #3D6281 0%, #42656E 100%);
+}
+
+
+
+
+/**
+*Feed
+*/
+.feed{
+background-color: @gray-white;
+height: 975px;
+}
+.search{
+background-color: @gray-lte;
+height: 70px;
+font-family: @font;
+font-height: 16px;
+}
+#wrap {
+marign-left: 100px;
+display: inline-block;
+position: relative;
+height: 50px;
+float: right;
+padding: 0;
+position: relative;
+}
+
+input[type="search-text"] {
+height: 50px;
+font-size: 15px;
+display: inline-block;
+font-family: @font;
+font-weight: 100;
+border: none;
+outline: none;
+color: @gray;
+padding: 3px;
+padding-right: 60px;
+width: 0px;
+position: absolute;
+top: 0;
+right: 0;
+background: none;
+z-index: 3;
+transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+cursor: pointer;
+}
+
+input[type="search-text"]:focus:hover {
+border-bottom: 1px solid #BBB;
+}
+
+input[type="search-text"]:focus {
+width: 200px;
+z-index: 1;
+border-bottom: 1px solid #BBB;
+cursor: text;
+}
+input[type="search-submit"] {
+height: 67px;
+width: 63px;
+display: inline-block;
+color:red;
+float: right;
+background: url(http://www.allenmatkins.com/includes/css/img/search-icon-gray.png) center center no-repeat;
+text-indent: -10000px;
+border: none;
+position: absolute;
+top: 0;
+right: 0;
+z-index: 2;
+cursor: pointer;
+opacity: 0.4;
+cursor: pointer;
+transition: opacity .4s ease;
+}
+input[type="search-submit"]:hover {
+opacity: 0.8;
+}
+
+/* Edit Profile */
+.card-container {
+cursor: pointer;
+height: 65px;
+perspective: 600;
+position: relative;
+width: 100%;
+font-family: @font;
+}
+.card {
+height: 100%;
+position: absolute;
+transform-style: preserve-3d;
+transition: all 0.75s ease-in-out;
+width: 100%;
+}
+.card:hover {
+transform: rotateY(180deg);
+}
+.card .side {
+backface-visibility: hidden;
+border-radius: 6px;
+height: 100%;
+position: absolute;
+overflow: hidden;
+width: 100%;
+background-color: @semit-trans-blue-teal;
+text-align: center;
+font-size: 15px;
+padding-top: 20px;
+}
+.card .back {
+background: @gray-lte;
+color: #0087cc;
+line-height: 150px;
+text-align: center;
+transform: rotateY(180deg);
+}
+
+/* Login */
+
+.login-panel{
+z-index: 2;
+margin-top: 300px;
+}
+
+.background_runner {
+background: url('../img/runner.jpg') no-repeat center center;
+background-size: cover;
+z-index: 1;
+}
+
+
+
+
+/* Sign Up And Login Tabs Partial */
+
+.tabs input[type=radio] {
+position: absolute;
+top: -9999px;
+left: -9999px;
+}
+
+.tabs {
+width: 650px;
+float: none;
+list-style: none;
+position: relative;
+padding: 0;
+margin: 75px auto;
+}
+.tabs li{
+float: left;
+}
+.tabs label {
+display: block;
+padding: 10px 20px;
+border-radius: 2px 2px 0 0;
+color: #08C;
+font-size: 24px;
+font-weight: normal;
+font-family: 'Lily Script One', helveti;
+background: rgba(255,255,255,0.2);
+cursor: pointer;
+position: relative;
+top: 3px;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+.tabs label:hover {
+background: rgba(255,255,255,0.5);
+top: 0;
+}
+
+[id^=tab]:checked + label {
+background: #08C;
+color: white;
+top: 0;
+}
+
+[id^=tab]:checked ~ [id^=tab-content] {
+display: block;
+}
+.tab-content{
+z-index: 2;
+display: none;
+text-align: left;
+width: 100%;
+font-size: 20px;
+line-height: 140%;
+padding-top: 10px;
+background: #08C;
+padding: 15px;
+color: white;
+position: absolute;
+top: 53px;
+left: 0;
+box-sizing: border-box;
+-webkit-animation-duration: 0.5s;
+-o-animation-duration: 0.5s;
+-moz-animation-duration: 0.5s;
+animation-duration: 0.5s;
+}
+
+
+
+
+
+/* parallax on homepage */
+
+
+.caption {
+position: absolute;
+bottom: 5%;
+right: 5%;
+text-align: right;
+color: #000000;
+}
+
+p, h1 { margin: 0;}
+h1 { margin-bottom: 0.2em; }
+p { line-height: 1.333em; }
+
+#slide-1 .caption {
+top: 40%;
+left: 10%;
+right: auto;
+bottom: auto;
+text-align: left;
+}
+
+#slide-3 .caption {
+top: 5%;
+left: 5%;
+text-align: left;
+}
+
+#slides-container {
+width: 100%;
+height: 100%;
+overflow: hidden;
+}
+
+#slides {
+width: 200%;
+height: 200%;
+position: fixed;
+top: 0;
+left: 0;
+}
+
+.slide {
+position: absolute;
+top: 0;
+left: 0;
+width: 50%;
+height: 50%;
+}
+
+#slide-1 {
+background: url('../img/runner.jpg') no-repeat center center;
+background-size: cover;
+}
+#slide-2 {
+background: url('../img/swimmer.jpg') no-repeat center center;
+background-size: cover;
+-webkit-transform: translate(0,100%);
+-ms-transform: translate(0,100%);
+transform: translate(0,100%);
+}
+#slide-3 {
+background: url('../img/mountain_biking.jpg') no-repeat center center;
+background-size: cover;
+-webkit-transform: translate(100%,100%);
+-ms-transform: translate(100%,100%);
+transform: translate(100%,100%);
+}
+#slide-4 {
+background: url('../img/mobile_platform.jpg') no-repeat center center;
+background-size: cover;
+-webkit-transform: translate(100%,0%);
+-ms-transform: translate(100%,0%);
+transform: translate(100%,0%);
+}
+
+#helper {
+position: absolute;
+left: 0;
+top:0;
+height: 400%;
+width: 20px;
+}
+.marker {
+height: 25%;
+width: 100%;
+}
+.red {
+background-color: red;
+}
+.green {
+background-color: green;
+}
+.blue {
+background-color: blue;
+}
+.yellow {
+background-color: yellow;
+}
+
+.email-cover{
+background-color: blue;
+}
+
+
+/*
+* Circular Images
+*/
+.circular {
+	width: 50px;
+	height: 50px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	}
+
+/*
+*Test Colors
+*/
+.red{
+	background: red;
+}
+.blue{
+	background: blue;
+}
+.yellow{
+	background: yellow;
+}
+.white{
+	background: white;
+}
+
+/*
+*Responsive Variables
+*/
+.body-vh{
+	height: 90vh;
+}
+.max-height{
+	height: 100%;
+}
+.sixty-vw{
+	width: 60vw;
+}
+.twenty-vw{
+	width: 20vw;
+}
+.ten-vw{
+	width: 10vw;
+}
+.max-vw{
+	width: 100vw;
+}
+.float-left{
+	float: left;
+}
+.five-vw{
+	width: 5vw;
+}
+.fifteen-vw{
+	width: 15vw;
+}
+.sixty-five-vw{
+	width: 65vw;
+}
+.seventy-vw{
+	width: 70vw;
+}
+/*
+* Nav Bar
+*/
+li {
+	font-family: @font;
+	color: @white;
+	font-size: 1.5vh;
+	text-align: center;
+}
+
+/*
+* User Information 
+*/
+.health-repo{
+	font-family: @font;
+	color: #ffffff;
+	font-size: 3vh;
+	text-align: center;
+}

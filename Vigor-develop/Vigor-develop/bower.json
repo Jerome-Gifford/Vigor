@@ -1,0 +1,26 @@
+{
+  "name": "Vigor",
+  "version": "1.0.0",
+  "homepage": "https://github.com/emergingtech/Vigor",
+  "authors": [
+    "Dennis Martinez <denniswaltermartinez@gmail.com>"
+  ],
+  "description": "Vigor health app.",
+  "main": "gulpfile.js",
+  "keywords": [
+    "vigor",
+    "health"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2",
+    "animate.less": "*"
+  }
+}

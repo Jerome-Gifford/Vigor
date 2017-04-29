@@ -1,0 +1,7 @@
+in cmd:
+
+if you done have db
+	php artisan migrate --seed
+
+if you have db 
+	php artisan migrate: refresh --seed

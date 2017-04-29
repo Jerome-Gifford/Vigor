@@ -1,0 +1,6 @@
+composer update
+composter dump-autoload
+bower install
+php artisan migrate
+php artisan migrate --seed
+php artisan serve

@@ -1,0 +1,55 @@
+**************************
+Mandatory Installation and Setup
+**************************
+1) install xampp and start the Control Panel
+1a) start both apache and mysql process
+1b) open browser and browse to 127.0.0.1
+1c) click on security, change root password to "root" (minus quotes)
+1d) in the Xampp Control Panel, click on the admin button next to MySQL
+1e) Log in with root:root
+1f) Create a new database called "fitness" (minus quotes)
+1g) Stop the apache service, but keep MySql running.
+2)install composer from getcomposer.org and update composer
+3) install node from http://nodejs.org/download/
+4) install git from http://git-scm.com/
+4a) make sure to select the middle option during the install to run git via command prompt.
+5) install the github for windows app from github.com
+6) Click the (+) in the upper left and clone the project, save it where you want it.
+**************************
+
+
+
+**************************
+Setting Local Environment
+**************************
+1) Open the Fitness repo folder
+2) Rename the .env-php-example to .env.local.php
+3) Open app/start.php and add your local machine to the machine list.
+4) Shift right click in the Fitness repo folder and open click "open command windows here"
+5) Run the following commands in order
+* composer update
+* bower install
+* php artisan migrate --seed
+* php artisan serve
+**************************
+
+
+
+**************************
+Description of Commands
+**************************
+composer update -> download and update the project requirements
+
+bower install -> install/update bower web components
+
+php artisan migrate --seed -> create tables in the fitness database and then seed the tables with data
+
+php artisan serve -> locally serve the website, it will be available in browser through http://localhost:8000
+**************************
+
+
+
+**************************
+Adding/Configuring New Pages(Routes)
+**************************
+Add here

@@ -1,0 +1,11 @@
+To fix the chart.js issues with IE.
+
+1) Open the ".js" and copy the code into http://jscompress.com/
+
+2) Compress the js.
+
+3) Copy and save the minified js back into the corresponding js file.
+
+
+
+REASON:  IE has an issue, go figure, that does not properly render .js spacing.  Minifying solves the issue.

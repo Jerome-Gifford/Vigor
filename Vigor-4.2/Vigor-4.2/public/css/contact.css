@@ -1,0 +1,44 @@
+/**Contact/FAQ*/
+
+
+#contactform .accordion {width: 100%;}
+.contact-us {width: 100%;}
+
+.contact_us_button_group_form-group {padding-top: 40px; : #3b676a;}
+#contactform .message_box_group_form-group {padding-top: 10px;}
+#contactform .email_box_group_form-group {padding-top: 10px;}
+#contactform .accordion .panel-heading:hover {background-color: rgba(59, 103, 106, 0.45);}
+
+
+#question{
+    display: inline-block;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+.panel-title a {
+    display: block;
+    padding: 10px 15px;
+    margin: -10px -15px;
+}
+
+.panel-group a {text-decoration: none; font-family: 'Glyphicons Halflings'; font-size: 18px;}
+
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    float: left;        /* adjust as needed */
+    color: grey;
+    padding-right: 13px;
+}
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+
+}
+.blue-button {
+    background-color: #3B676A;
+    color: #fff;
+    border-bottom: none;
+}
+

@@ -1,0 +1,2 @@
+$userId = Auth::user()->id;
+Food::user_foods->where('food_name', 'LIKE', 'fish')->where('user_id', '=', $userId)->count()

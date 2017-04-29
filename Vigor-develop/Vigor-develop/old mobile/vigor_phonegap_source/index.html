@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Vigor</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+</head>
+
+<body>
+
+    <div data-role="page" id="initiation">
+
+        <div data-role="header">
+            <h1>Welcome to Vigor!</h1>
+        </div>
+        <div data-role="content">
+            <div align="center"><img style="height:auto; width:auto; max-width:300px; max-height:300px;" src="logo.png"></div>   
+            <form id="form" action="http://www.etwebapp.com/auth/login" method="post" data-page="home">
+                <input type="hidden" class="user-id" name="user_id">
+                <label> Username </label>
+                <input type="text" id="username" name="email">
+                <label> Password </label>
+                <input type="password" id="password" name="password" >
+
+                <input type="submit" value="Login" id="loginbutton">
+            </form> 
+        </div>
+    </div>
+
+
+    <!-- workouts -->
+    <div data-role="page" id="workouts">
+        <div data-role="header">
+            <h1>Add a Workout</h1>
+
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#workouts" data-transition="none" data-icon="plus">Add Workout</a></li>
+                    <li><a href="#meals" data-transition="none" data-icon="plus">Add a Meal</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div data-role="content">
+             <form  action="http://www.etwebapp.com/auth/useractivity" method="post" data-page="workouts">
+                <input type="hidden" class="user-id" name="user_id">
+                <label> Activity: </label>
+                <input type="text" id="activity" name="activity_id">
+                <!-- <label> Date: </label>
+                <input type="text" id="date" name="date"> -->
+                <!-- <label> Time: </label>
+                <input type="text" id="time" name="workout_at"> -->
+                <label> Length: </label>
+                <input type="text" id="length" name="length">
+                <label> Notes: </label>
+                <input type="text" id="note" name="comment">
+<!--                 {"workout_activity":"3","workout_at":"1424741671261","workout_length":"2","workout_comment":"asd"} -->
+
+                 <input type="submit" value="Submit Workout">
+            </form>
+        </div>
+
+    </div>
+    <!-- end worksouts -->
+
+    <!-- meals -->
+    <div data-role="page" id="meals">
+        <div data-role="header">
+            <h1>Add a Meal</h1>
+
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#workouts" data-transition="none" data-icon="plus">Add Workout</a></li>
+                    <li><a href="#meals" data-transition="none" data-icon="plus">Add a Meal</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div data-role="content">
+            <form action="http://www.etwebapp.com/auth/userfoods" method="post" data-page="meals">
+                <input type="hidden" class="user-id" name="user_id">
+                <label> Food: </label>
+                <input type="text" id="food" name="food_name">
+                <label> Servings: </label>
+                <input type="text" id="servings" name="food_serving">
+                <label> Calories: </label>
+                <input type="text" id="calories" name="food_calories">
+                <label> Fat: </label>
+                <input type="text" id="fat" name="food_fat">
+                <label> Protein: </label>
+                <input type="text" id="protein" name="food_protein">
+                <label> Carbs: </label>
+                <input type="text" id="carbs" name="food_carbs">
+                <label> Food Type: </label>
+                <input type="text" id="type" name="food_type">
+
+                <input type="submit" value="Submit Meal">
+            </form>
+        </div>
+
+    </div>
+    <!-- end meals -->
+
+    <!-- home -->
+    <div data-role="page" id="home">
+        <div data-role="header">
+            <h1>Welcome</h1>
+
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#workouts" data-transition="none" data-icon="plus">Add Workout</a></li>
+                    <li><a href="#meals" data-transition="none" data-icon="plus">Add a Meal</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div data-role="content">   
+            <h2> Welcome to the Vigor Mobile App. Choose if you would like to enter a workout or a meal.</h2>
+        </div>
+    </div>
+    <!-- end home -->
+
+    <script>
+
+    /**
+     * Server class constructor
+     */
+     var Server = {};
+
+    /**
+     * Send data to the server.
+     * 
+     * @param  {[type]} url         [description]
+     * @param  {[type]} data        [description]
+     * @param  {[type]} onCcomplete [description]
+     * @param  {[type]} onError     [description]
+     * @return {[type]} options     [description]
+     * @return {[type]}             [description]
+     */
+     Server.send = function(url, data, onComplete, onError, options) {
+        onComplete = onComplete || $.noop;
+        onError = onError || $.noop;
+
+        options = $.extend({
+            type: 'POST',
+            data: JSON.stringify(data),
+            url: url,
+            contentType: 'application/json',
+            accepts: 'json',
+            dataType: 'json',
+            crossDomain: true,
+            success: onComplete,
+            error: onError
+        }, options);
+
+        console.log(options);
+
+        $.ajax(options);
+    };
+
+    $.fn.serializeObject = function() {
+        var o = {};
+        var a = this.serializeArray();
+        $.each(a, function() {
+            if (o[this.name] !== undefined) {
+                if (!o[this.name].push) {
+                    o[this.name] = [o[this.name]];
+                }
+                o[this.name].push(this.value || '');
+            } else {
+                o[this.name] = this.value || '';
+            }
+        });
+        return o;
+    };
+
+
+    // always show login screen because we are noobs
+    $(window).load(function() {
+        $.mobile.changePage('#initiation');
+    });
+
+    $('form').submit(function(e) {
+        e.preventDefault();
+
+        var form = $(e.currentTarget);
+
+        Server.send(form.attr('action'), form.serializeObject(), function(data) {
+            if (!data.success) {
+                console.log('error!', data);
+                return;
+            }
+
+
+            if (form.data('page')==="home")
+            {
+                $(".user-id").val(data.id);
+            }
+
+
+            if (form.data('page').length) {
+                $.mobile.changePage('#' + form.data('page'));
+            } else {
+                // popup!
+            }
+        }, function(error) {
+            console.log('error', error);
+        });
+    });
+    </script>
+
+    </body>
+</html>

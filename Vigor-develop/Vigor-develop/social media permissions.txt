@@ -1,0 +1,19 @@
+Twitter
+	Possible permissions
+		Read Tweets from timeline(Maybe)
+		See who you follow, and follow new people(Definantly)
+		Update your Profile(Maybe)
+		Post tweets for you(yes, if connecting feed)
+		Access your DM's (no?)
+		See your Twitter password(Depending on whatever else comes about)
+
+
+Facebook
+
+
+
+
+
+
+
+Google Plus
